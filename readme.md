@@ -27,3 +27,5 @@ to watch & compile sass and js.
 
 Bourbon is a sass library dependency in this project. If you need to update, you'll have to manually install it.
 
+Sass files are using ITCSS structure. See here https://github.com/itcss/itcss-netmag.
+
