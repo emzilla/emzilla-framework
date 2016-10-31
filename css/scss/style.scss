@@ -2,74 +2,73 @@
 // Import all the styles
 // =================================
 
-/* Settings
-==================================
---- Variables
------------------------------- */
-	@import "settings--colors";
-	@import "settings--global";
-	@import "settings--type";
-
-
-/* Tools
-==================================
---- Functions, Mixins, Libraries
------------------------------- */
+/* 1. Settings
+================================== */
+// --- Variables
+// ------------------------------
 	@import "bourbon/bourbon";
-	@import "tools--mixins";
+	@import "1_settings/settings--colors";
+	@import "1_settings/settings--global";
+	@import "1_settings/settings--type";
 
 
-/* Generic
-==================================
---- Low-specificity rulesets
---- Normalize/Reset, global rules
------------------------------- */
-	@import "generic--box-sizing";
-	@import "generic--normalize";
-	@import "generic--reset";
-	@import "generic--shared";
+/* 2. Tools
+==================================  */
+// --- Functions, Mixins, Libraries
+// ------------------------------
+	@import "2_tools/tools--mixins";
 
 
-/* Elements
-==================================
---- Unclassed HTML elements, typography, etc.
------------------------------- */
-	@import "elements--links";
-	@import "elements--lists";
-	@import "elements--page";
-	@import "elements--quotes";
+/* 3. Generic
+================================== */
+// --- Low-specificity rulesets
+// --- Normalize/Reset, global rules
+// ------------------------------
+	@import "3_generic/generic--box-sizing";
+	@import "3_generic/generic--normalize";
+	@import "3_generic/generic--reset";
+	@import "3_generic/generic--shared";
+	@import "3_generic/generic--grid";
 
 
-/* Objects
-==================================
---- Design-free objects
---- Patterns, wrappers & layout systems
------------------------------- */
-	@import "objects--layout";
-	@import "objects--media";
-	@import "objects--wrappers";
+/* 4. Elements
+================================== */
+// --- Unclassed HTML elements, typography, etc.
+// ------------------------------
+	@import "4_elements/elements--images";
+	@import "4_elements/elements--links";
+	@import "4_elements/elements--lists";
 
 
-/* Vendors
-==================================
---- 3rd party style overrides
------------------------------- */
-	@import "vendors";
+/* 5. Objects
+================================== */
+// --- Design-free objects
+// --- Patterns, wrappers & layout systems
+// ------------------------------
+	@import "5_objects/objects--layout";
+	@import "5_objects/objects--media";
+	@import "5_objects/objects--wrappers";
 
 
-/* Components
-==================================
---- Components and Features
---- Usually have >1 selector
------------------------------- */
-	@import "components--buttons";
-	@import "components--page-titles";
+/* 6. Components
+==================================  */
+// --- Components and Features
+// --- Usually have >1 selector
+// ------------------------------
+	@import "6_components/components--buttons";
 
 
-/* Trumps
-==================================
---- Helper classes and overrides 
---- Highest specificity layer
------------------------------- */
-@import "trumps--links";
-@import "trumps--widths";
+/* 7. Vendors
+==================================  */
+// --- 3rd party style overrides
+// ------------------------------
+	@import "7_vendors/vendors";
+
+
+/* 8. Trumps
+================================== */
+// --- Helper classes and overrides 
+// --- Highest specificity layer
+// ------------------------------
+	@import "8_trumps/trumps--links";
+	@import "8_trumps/trumps--widths";
